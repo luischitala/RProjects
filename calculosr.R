@@ -34,3 +34,31 @@ Nota_c_3
 Nota_final <- Nota_c_1 + Nota_c_2 + Nota_c_3
 Nota_final
 
+summary(mtcars)
+
+
+wt <- (mtcars$wt*1000)/2
+wt
+
+mtcars.new <- transform(mtcars,wt=wt*1000/2)
+mtcars.new
+
+summary(mtcars.new)
+
+tiempo_platzi <- c(25,5,10,15,10)
+tiempo_lecturas <- c(30,10,5,10,15)
+tiempo_aprendizaje <- tiempo_platzi + tiempo_lecturas
+tiempo_aprendizaje
+
+dias_aprendizaje <- c("Lunes","Martes","Miercoles", "Jueves", "Viernes")
+dias_aprendizaje
+
+dias_mas_20min <- c(TRUE, FALSE, FALSE, TRUE, TRUE)
+dias_mas_20min
+
+total_tiempo_platzi <- sum(tiempo_platzi)
+total_tiempo_platzi
+total_tiempo_lecturas <- sum(tiempo_lecturas)
+total_tiempo_lecturas
+total_tiempo_adicional <- total_tiempo_platzi + total_tiempo_lecturas
+total_tiempo_adicional
